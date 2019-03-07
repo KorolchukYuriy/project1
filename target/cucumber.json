@@ -1,0 +1,351 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5107483814,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "home_page",
+        "description": "",
+        "id": "welcome-to-the-internet;home-page",
+        "after": [
+          {
+            "result": {
+              "duration": 650916418,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2715328354,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "that user is on main page",
+            "match": {
+              "location": "basicAuth.that_user_is_on_main_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 249284011,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user clicks on Basik Auth button",
+            "match": {
+              "location": "basicAuth.user_clicks_on_Basik_Auth_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 124474,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user should should enter \"admin\" and \"admin\" and click ok",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"admin\"",
+                  "offset": 25
+                },
+                {
+                  "val": "\"admin\"",
+                  "offset": 37
+                }
+              ],
+              "location": "basicAuth.user_should_should_enter_and_and_click_ok(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2064017710,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user should be loged in",
+            "match": {
+              "location": "basicAuth.user_should_be_loged_in()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3954625178,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "dropdown_options",
+        "description": "",
+        "id": "welcome-to-the-internet;dropdown-options",
+        "after": [
+          {
+            "result": {
+              "duration": 664995377,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2430460653,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user is on dropdown page",
+            "match": {
+              "location": "dropdown_text.user_is_on_dropdown_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 146824996,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user clicks dropdown box",
+            "match": {
+              "location": "dropdown_text.user_clicks_dropdown_box()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 122739457,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user should select both options one by one and print text to console",
+            "match": {
+              "location": "dropdown_text.user_should_select_first_option()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3612872866,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "upload_file",
+        "description": "",
+        "id": "welcome-to-the-internet;upload-file",
+        "after": [
+          {
+            "result": {
+              "duration": 679487252,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2724078205,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user is on upload page",
+            "match": {
+              "location": "upload.user_is_on_upload_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 41056668,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user clicks on browse button",
+            "match": {
+              "location": "upload.user_clicks_on_browse_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 256704141,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user should be able to upload the file",
+            "match": {
+              "location": "upload.user_should_be_able_to_upload_the_file()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3533083986,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "download_file",
+        "description": "",
+        "id": "welcome-to-the-internet;download-file",
+        "after": [
+          {
+            "result": {
+              "duration": 686044175,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2449283375,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "the user is on download page",
+            "match": {
+              "location": "download1.the_user_is_on_download_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 151928430,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "user clicks on selected file and file will be downloaded",
+            "match": {
+              "location": "download1.user_clicks_on_selected_file()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3691219190,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "jquery",
+        "description": "",
+        "id": "welcome-to-the-internet;jquery",
+        "after": [
+          {
+            "result": {
+              "duration": 702108018,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2490376715,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "user is on jquery page",
+            "match": {
+              "location": "jquery.user_is_on_jquery_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3575984137,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "user clicks on all files one by one and downloads them",
+            "match": {
+              "location": "jquery.user_clicks_on_all_files_one_by_one()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Welcome to the-internet",
+    "description": "",
+    "id": "welcome-to-the-internet",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/Authorization.feature",
+    "tags": []
+  }
+]

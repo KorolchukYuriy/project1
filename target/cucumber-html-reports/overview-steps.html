@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports (no 1) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+              <th>Number</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>the_Internet_Herokuapp</td>
+              <td>1</td>
+            <td>06 Mar 2019, 21:11</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+          <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+      </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+                      <tr>
+              <td class="location">Hooks.setUp()</td>
+              <td>5</td>
+              <td class="duration" data-value="3979857006">3.979</td>
+              <td class="duration" data-value="3979857006">5.107</td>
+              <td class="duration" data-value="19899285034">19.899</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Hooks.tearDown()</td>
+              <td>5</td>
+              <td class="duration" data-value="676710248">0.676</td>
+              <td class="duration" data-value="676710248">0.702</td>
+              <td class="duration" data-value="3383551240">3.383</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">basicAuth.that_user_is_on_main_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="2715328354">2.715</td>
+              <td class="duration" data-value="2715328354">2.715</td>
+              <td class="duration" data-value="2715328354">2.715</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">basicAuth.user_clicks_on_Basik_Auth_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="249284011">0.249</td>
+              <td class="duration" data-value="249284011">0.249</td>
+              <td class="duration" data-value="249284011">0.249</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">basicAuth.user_should_be_loged_in()</td>
+              <td>1</td>
+              <td class="duration" data-value="2064017710">2.064</td>
+              <td class="duration" data-value="2064017710">2.064</td>
+              <td class="duration" data-value="2064017710">2.064</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">basicAuth.user_should_should_enter_and_and_click_ok(String,String)</td>
+              <td>1</td>
+              <td class="duration" data-value="124474">0.000</td>
+              <td class="duration" data-value="124474">0.000</td>
+              <td class="duration" data-value="124474">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">download1.the_user_is_on_download_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="2449283375">2.449</td>
+              <td class="duration" data-value="2449283375">2.449</td>
+              <td class="duration" data-value="2449283375">2.449</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">download1.user_clicks_on_selected_file()</td>
+              <td>1</td>
+              <td class="duration" data-value="151928430">0.151</td>
+              <td class="duration" data-value="151928430">0.151</td>
+              <td class="duration" data-value="151928430">0.151</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">dropdown_text.user_clicks_dropdown_box()</td>
+              <td>1</td>
+              <td class="duration" data-value="146824996">0.146</td>
+              <td class="duration" data-value="146824996">0.146</td>
+              <td class="duration" data-value="146824996">0.146</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">dropdown_text.user_is_on_dropdown_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="2430460653">2.430</td>
+              <td class="duration" data-value="2430460653">2.430</td>
+              <td class="duration" data-value="2430460653">2.430</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">dropdown_text.user_should_select_first_option()</td>
+              <td>1</td>
+              <td class="duration" data-value="122739457">0.122</td>
+              <td class="duration" data-value="122739457">0.122</td>
+              <td class="duration" data-value="122739457">0.122</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">jquery.user_clicks_on_all_files_one_by_one()</td>
+              <td>1</td>
+              <td class="duration" data-value="3575984137">3.575</td>
+              <td class="duration" data-value="3575984137">3.575</td>
+              <td class="duration" data-value="3575984137">3.575</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">jquery.user_is_on_jquery_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="2490376715">2.490</td>
+              <td class="duration" data-value="2490376715">2.490</td>
+              <td class="duration" data-value="2490376715">2.490</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">upload.user_clicks_on_browse_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="41056668">0.041</td>
+              <td class="duration" data-value="41056668">0.041</td>
+              <td class="duration" data-value="41056668">0.041</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">upload.user_is_on_upload_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="2724078205">2.724</td>
+              <td class="duration" data-value="2724078205">2.724</td>
+              <td class="duration" data-value="2724078205">2.724</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">upload.user_should_be_able_to_upload_the_file()</td>
+              <td>1</td>
+              <td class="duration" data-value="256704141">0.256</td>
+              <td class="duration" data-value="256704141">0.256</td>
+              <td class="duration" data-value="256704141">0.256</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                  </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>16</td>
+            <td>24</td>
+            <td class="duration">1.779</td>
+            <td class="duration">19.899</td>
+            <td class="duration">42.701</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
